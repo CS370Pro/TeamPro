@@ -9,10 +9,13 @@ This platform will bring convenience in resources storing and sharing!
 **Usage**
 
 To build the project, type: "mvn package"
+
 To run the project, type: "java -cp target/CS370TeamProject-1.0-SNAPSHOT-jar-with-dependencies.jar RestfulServer"
 
 **Docker**
 
-To build a docker image, type: "docker build --tag bulletinboard:1.0 ."
-To run the docker image, type: "docker run --publish 8000:8088 --detach --name cloud bulletinboard:1.0"
+To build a docker image, type: "docker build -t cloud ."
+
+To run the docker image, type: "docker container run cloud"
+
 To delete the container, type: "docker rm --force cloud"
